@@ -1,5 +1,10 @@
-<button data-reflex="click->Example#test">Test</button>
+<!-- <button data-reflex="click->Example#test">Test</button> -->
 
 <% if @stimulus_reflex %>
   <h1>Success! Random: <%= (rand * 100).to_i %></h1>
 <% end %>
+
+<form class="" action="index.html" method="post">
+  <input type="text" name="test" value="Tom & Jerry">
+  <button type="submit" data-reflex="click->Example#test">Add Trip</button>
+</form>
